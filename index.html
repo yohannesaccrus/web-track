@@ -5,6 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<script type="text/javascript">
+		//<![CDATA[
+		var owa_baseUrl = 'https://next-owa-track.herokuapp.com/';
+		var owa_cmds = owa_cmds || [];
+		owa_cmds.push(['setSiteId', '0b4c8935896b1a353848f08ca52084cd']);
+		owa_cmds.push(['trackPageView']);
+		owa_cmds.push(['trackClicks']);
+		
+		(function() {
+			var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+			owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+			_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+			var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+		}());
+		//]]>
+	</script>
 </head>
 <body>
 	<h1>Open Web Analytic Test</h1>
